@@ -71,7 +71,7 @@ h2{
     text-align: center;
     font-size: 2vh;
     font-weight: 4vh;
-    font-family:'Courier New', Courier, monospace    
+    font-family:'Courier New', Courier, monospace;   
 }
 ul > li{
     margin-left: 0.2vh;
@@ -119,45 +119,29 @@ ol> li{
   height:4vh;
   margin: 1vh 1vw;
 }
-.presentation{
-    color:#231499;
-    background-color: #EAB3E4;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    border-radius: 1.5vw;
-    padding: 1.5vw;
-    font-family: 'Courier New', Courier, monospace;
+.pay{
+  background:#decefd;
+  width:50%;
+  height:100%;
+  padding: 3vw 4vw;
+  margin:2vw 25vw;
+  margin-top:4vw;
+  display:flex;
+  flex-flow:column nowrap ;
+  border-radius:3vw;
+  color: #6b002e;
+  border:5px solid #6b002e;
+  font-famliy:'Courier New', Courier, monospace;
+  
 }
-.presentation > h2{
-    color: #4C1094;
+.formPay{
+  margin:1vw 0vw;
+  border-radius:0.5vw;
 }
-.presentation > p{
-    color: #2e095c;
-    font-size: 1.2vw;
+.buttonPay:{
+  border-radius:2;
+  margin-left:15vw;
 }
-.arts{
-    margin-left: 7vw;
-    margin-right: 7vw;
-    border-radius: 1.5vw;
-    padding: 1.5vw;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #87A5D4;
-
-}
-.gallery{
-   display: inline-grid ;
-   grid-template-columns: 25vw 25vw;
-   grid-template-rows: 18vw 18vw;
-   margin-left: 20vw;
-   margin-right: 2vw;
-    
-}
-.pic { 
-    width: 15vw; 
-    height: 15vw;
-}   
-
-
 /*
 responde a resolucion de tablets
 */
@@ -300,78 +284,4 @@ responde a resolucion de celulares
     height: 30vw;
 }
 
-}
-.imgAA[alt]{
-    padding-right: 2vw;
-    margin:3vh 3vw;
-    width:40vw; 
-    height:40vh;
-    border-radius: 10vw;
-    }
-#AA{
-    font-size: 2vw
-    margin:3vh 3v;
-    padding: 15px;
-}
-
-.imgAP[alt]{
-    padding-right: 2vw;
-    margin:3vh 3vw;
-    width:40vw; 
-    height:40vh;
-    border-radius: 10vw;
-       
-    }
-.Almeja[alt]{
-    padding-right: 2vw;
-    margin:3vh 3vw;
-    width:40vw; 
-    height:40vh;
-    border-radius: 10vw;
-       
-    }
-#AP{
-    font-size: 2vw
-    margin:3vh 3v;
-    padding: 15px;
-}
-
-.slider{
-    width: 500px;
-    height: 500px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: cambio 20s infinite alternate;
-    animation-timing-function: ease-in-out;
-}
-
-.slider li{
-    width: 100%;
-    list-style: none;
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-}
-
-@keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
 }

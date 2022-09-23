@@ -5,52 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comprar Lovers n' Bombs</title>
+  <title>Formulario Subasta</title>
   <link rel="shortcut icon" type="image/ico" href="../assets/logo-ARTS.ico">
-  <link rel="stylesheet" href="../css/pagVenta.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="encabezado">
-      <a href="./index.html"><img class="logo" src="../assets/logo-ARTS.png" alt="logo"></a>
+      <img class="logo" src="../assets/logo-ARTS.png" alt="logo">
       <h1 class="title">Digital Arts</h1>
     </div>
+    <br><br>
     <nav class="menu">
       <ul>
-        <li><a href="../index.html">Home</a></li>
         <li><a href="./abstracto.html">Arte Abstracto</a></li>
         <li><a href="./artePop.html">Arte Pop</a></li>
         <li><a href="./digital.html">Arte Digital</a></li>
         <li><a href="./fotorrealismo.html">Fotorrealismo</a></li>
         <li><a href="./realismo.html">Realismo</a></li>
-        <li><a href="./mediosParaPintar.html">Formas de Pintar</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="./subasta.html">Subasta</a></li>
-
       </ul>
     </nav>
   </header>
+  <br><br>
   <main>
-    <section class="content">
-      <section class="flexArt">
-        <div>
-          <img class="art" src="../assets/img/20220904_160618.jpg" alt="art1">
-        </div>
-        <div class="info">
-          <p class="pago">$10</p>
-          <a href="./formPay.html"><button class="compra">comprar</button></a>
-          <div class="description">
-            <h2>Nombre de la Obra:</h2>
-            <h3>lovers n' bombs</h3>
-            <h2>Descripción:</h2>
-            <p>Obra inspirada en el personaje de la obra Chainsaw Man y en la relación que tienen Reze y de Denji,
-              personajes
-              de esta misma obra.Este arte hecho por DaviD R. Avendaño con la tecnica de pintura en acuarela. </p>
-          </div>
-        </div>
-      </section>
-
-    </section>
+    <form id="subasta">
+      <fieldset>
+        <legend>Datos para la subasta</legend>
+        <label for="name">Nombre del autor:</label>
+        <input type="text" id="name" placeholder="introduce tu nombre" minlength="3" maxlength="200"
+          title="introduce al menos 4 caracteres maximo 50 caracteres" tabindex="0" autofocus="true" autocomplete="off"
+          required>
+        <label for="descrip">Descripción de la pintura</label>
+        <input type="text" id="descrip" placeholder="Descripción de la pintura" </fieldset>
+    </form>
   </main>
   <footer class="footer">
     <div class="contFooter">
@@ -71,7 +61,6 @@
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>

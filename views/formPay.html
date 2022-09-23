@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Arts</title>
+  <link rel="shortcut icon" type="image/ico" href="../assets/logo-ARTS.ico">
+  <link rel="stylesheet" href="../css/stylePay.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="encabezado">
+      <a href="./index.html"><img class="logo" src="../assets/logo-ARTS.png" alt="logo"></a>
+      <h1 class="title">Digital Arts</h1>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./abstracto.html">Arte Abstracto</a></li>
+        <li><a href="./artePop.html">Arte Pop</a></li>
+        <li><a href="./digital.html">Arte Digital</a></li>
+        <li><a href="./fotorrealismo.html">Fotorrealismo</a></li>
+        <li><a href="./realismo.html">Realismo</a></li>
+        <li><a href="./mediosParaPintar.html">Formas de Pintar</a></li>
+        <li><a href="./subasta.html">Subasta</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="pay">
+    <h2>Información de Pago</h2>
+      <form id="form">
+        <h3>Informacion Personal:</h3>
+        <div class="personData">
+          <label for="inputNames">Nombre y Apellidos:</label>
+          <input type="text" class="formPay" id="inputNames" placeholder="Nombre y Apellidos"><br>
+          <label for="inputMail">correo electronico:</label>
+          <input type="email" class="formPay" id="inputMail" placeholder="email">
+          <div class="selectDoc">
+            <label for="documentId">Documento de identidad</label>
+            <select id="documentId" class="formPay">
+              <option selected>Selecciona</option>
+              <option>cedula de ciudadania</option>
+              <option>tarjeta de identidad</option>
+              <option>pasaporte</option>
+            </select>
+          </div>
+          <label for="identity">N° de identidad</label>
+          <input type="number" class="formPay" id="identity">
+        </div>
+        <div class="cardData">
+          <h3>informacion de la tarjeta</h3>
+          <label for="cardOp">Banco:</label>
+            <select id="cardOp" class="formPay">
+              <option selected>Selecciona</option>
+              <option>master card</option>
+              <option>VISA</option>
+              <option>BBVA</option>
+              <option>ITAU</option>
+            </select><br>
+          <label for="nCard">N° de tarjeta</label>
+          <input type="number" class="formPay" id="nCard"><br>
+          <label for="security">N° de seguridad</label>
+          <input type="number" class="formPay" id="security">
+          <div class="date">
+            <h4>fecha de vencimiento:</h4>
+            <label for="nMes">mes</label>
+            <input type="number" class="formPay" id="nMes" min="01" max="12">
+            <label for="nAño">año</label>
+            <input type="number" class="formPay" id="nAño" min="00" max="50">
+          </div>
+        </div>
+        <div class="checkPol">
+            <input class="formPay" type="checkbox" id="checkPolitica">
+            <label class="formPay" for="gridCheck">
+              Acepto política de datos
+            </label>
+        </div>
+      <button type="submit" id="envDato" class="buttonPay">Enviar Datos</button>  
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="contFooter">
+      <div class="redes">
+        <h4>Autores</h4>
+        <ol>
+          <li>Carol Morales</li>
+          <li>David Avendaño</li>
+          <li>Mateo Murcia</li>
+          <li>Daniel Leal</li>
+          <li>Felipe Forigua</li>
+        </ol>
+      </div>
+      <div class="redes">
+        <a href=""><img class="lredes" src="../assets/img/icons8-instagram-80.png"></a>
+        <a href=""><img class="lredes" src="../assets/img/icons8-twitter-80.png"></a>
+        <a href=""><img class="lredes" src="../assets/img/icons8-gmail-80.png"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
