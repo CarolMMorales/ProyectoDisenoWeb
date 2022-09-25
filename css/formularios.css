@@ -31,7 +31,7 @@ h2{
   margin-top: 2vh;
   margin-right: 2vw;
 }
-.compra{
+.sub{
     display: inline-block;
     padding: 15px;
     background-color: rgb(220, 211, 227);
@@ -119,7 +119,7 @@ ol> li{
   height:4vh;
   margin: 1vh 1vw;
 }
-.pay{
+.formularios{
   background:#decefd;
   width:50%;
   height:100%;
@@ -131,16 +131,20 @@ ol> li{
   border-radius:3vw;
   color: #6b002e;
   border:5px solid #6b002e;
-  font-famliy:'Courier New', Courier, monospace;
+  font-family:'Courier New', Courier, monospace;
   
 }
-.formPay{
+.form{
   margin:1vw 0vw;
   border-radius:0.5vw;
 }
-.buttonPay:{
-  border-radius:2;
-  margin-left:15vw;
+.button{
+  color: black;
+  background-color: #b4a2c9;
+  text-decoration:underline rgb(90, 88, 223);
+  border-radius:2%;
+  margin: 3% 40%;
+  padding: 2% 2%;
 }
 /*
 responde a resolucion de tablets

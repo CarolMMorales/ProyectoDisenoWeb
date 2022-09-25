@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Subasta</title>
+  <link rel="shortcut icon" type="image/ico" href="../assets/logo-ARTS.ico">
+  <link rel="stylesheet" href="../css/formularios.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="encabezado">
+      <img class="logo" src="../assets/logo-ARTS.png" alt="logo">
+      <h1 class="title">Digital Arts</h1>
+    </div>
+    <br><br>
+    <nav class="menu">
+      <ul>
+        <li><a href="./abstracto.html">Arte Abstracto</a></li>
+        <li><a href="./artePop.html">Arte Pop</a></li>
+        <li><a href="./digital.html">Arte Digital</a></li>
+        <li><a href="./fotorrealismo.html">Fotorrealismo</a></li>
+        <li><a href="./realismo.html">Realismo</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./subasta.html">Subasta</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  <br><br>
+    <main>
+        <br><br><br><br>
+        <section class="formularios">
+          <h2>REGISTRARSE</h2>
+          <br><br>
+          <form id="formReg" action="../php/registro.php" method="POST">
+            <div>
+              <label for="txtUsuario">Usuario:</label><br>
+              <input type="text" class="form" name="txtUsuario" placeholder="Ingresa usuario" required><br>
+
+              <label for="txtClave">Contraseña:</label><br>
+              <input type="password" class="form" name="txtClave" id="txtClave" placeholder="Ingresa contraseña" required><br>
+
+              <label for="txtClave">Confirme contraseña:</label><br>
+              <input type="password" class="form" name="txtClaveDos" id="txtClaveDos" placeholder="Confirma contraseña" required><br>
+
+              <label for="txtCorreo">Correo electronico:</label><br>
+              <input type="email" class="form" name="txtCorreo" placeholder="Ingresa correo" required><br>
+
+            <br><br>
+            <div>
+              <input class="form" type="checkbox" id="checkPolitica" required>
+              <label class="form" for="gridCheck">
+                Acepto política de datos
+              </label>
+            </div>
+            <br><br>
+            <input class="form-btn" name="submit" type="submit" value="Suscribirse" />
+          </form>
+        </section>
+      </main>
+    </main>
+    <br><br><br><br>
+    <footer class="footer">
+      <div class="contFooter">
+        <div class="redes">
+          <h4>Autores</h4>
+          <ol>
+            <li>Carol Morales</li>
+            <li>David Avendaño</li>
+            <li>Mateo Murcia</li>
+            <li>Daniel Leal</li>
+            <li>Felipe Forigua</li>
+          </ol>
+        </div>
+        <div class="redes">
+          <a href=""><img class="lredes" src="../assets/img/icons8-instagram-80.png"></a>
+          <a href=""><img class="lredes" src="../assets/img/icons8-twitter-80.png"></a>
+          <a href=""><img class="lredes" src="../assets/img/icons8-gmail-80.png"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../script/valregistro.js"></script>
+  </body>
+  
+  </html>

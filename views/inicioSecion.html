@@ -26,6 +26,7 @@
         <li><a href="./realismo.html">Realismo</a></li>
         <li><a href="../index.html">Home</a></li>
         <li><a href="./subasta.html">Subasta</a></li>
+        
       </ul>
     </nav>
   </header>
@@ -33,49 +34,16 @@
   <main>
     <br><br><br><br>
     <section class="formularios">
-      <h2>Subasta</h2>
+      <h2>INICIAR SESIÓN</h2>
       <br><br>
       <form id="formSub">
-        <h3>Información de la pintura</h3>
         <div>
-          <label for="name">Nombre del autor:</label><br>
-          <input type="text" id="name" placeholder="introduce tu nombre" minlength="3" maxlength="30" autocomplete="off"
-          class="form" required> <br><br>
-          <label for="descrip">Descripción de la pintura</label><br>
-          <input type="text" id="descrip" class="form" placeholder="Descripción de la pintura" minlength="10"
-            maxlength="200" required>
-        </div> <br><br>
-        <div>
-          <label for="imagen">Pintura a subastar</label><br>
-          <input type="file" name="imagen" id="imagen" required>
-        </div> <br><br>
-        <div>
-          <h3>Información para el pago</h3>
-          <label for="inputNames">Nombre completo:</label><br>
-          <input type="text" class="form" id="inputName" placeholder="Nombre y Apellidos" required><br>
+          <label for="inputNames">Nombre - Usuario:</label><br>
+          <input type="text" class="form" id="inputNames" placeholder="Nombre y Apellidos" required><br>
           <label for="inputMail">correo electronico:</label><br>
-          <input type="email" class="form" id="inputMail" placeholder="email" required><br>
-
-          <label for="cardOp">Banco:</label>
-          <select id="cardOp" class="formSub" required>
-            <option selected>Selecciona</option>
-            <option>master card</option>
-            <option>VISA</option>
-            <option>BBVA</option>
-            <option>ITAU</option>
-          </select><br>
-          <label for="nCard">N° de tarjeta</label>
-          <input type="number" class="form" id="nCard" required><br>
-          <label for="security">N° de seguridad</label>
-          <input type="number" class="form" id="security" required>
-          <div>
-            <h4>fecha de vencimiento:</h4>
-            <label for="nMes">mes</label>
-            <input type="number" class="form" id="nMes" min="01" max="12" required>
-            <label for="nAño">año</label>
-            <input type="number" class="form" id="nAño" min="00" max="50" required>
-          </div>
-        </div>
+          <input type="email" class="form" id="inputMail" placeholder="Email" required><br>
+          <label for="contra">contraseña:</label><br>
+          <input type="password" class="form" id="contra" placeholder="Ingrese contraseña" required><br>
         <br><br>
         <div>
           <input class="form" type="checkbox" id="checkPolitica" required>
@@ -84,7 +52,8 @@
           </label>
         </div>
         <br><br>
-        <button type="submit" id="envDatoSub" class="button">Subastar</button>
+        <a href="../index.html"><button type="submit" id="inicioSesion" class="button">Acceder</button></a>
+        
       </form>
     </section>
   </main>
@@ -108,7 +77,6 @@
       </div>
     </div>
   </footer>
-  <script src="../script/subasta.js"></script>
 </body>
 
 </html>

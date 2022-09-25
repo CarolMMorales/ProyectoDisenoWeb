@@ -31,7 +31,7 @@ h2{
   margin-top: 2vh;
   margin-right: 2vw;
 }
-.compra{
+.sub{
     display: inline-block;
     padding: 15px;
     background-color: rgb(220, 211, 227);
@@ -309,8 +309,8 @@ responde a resolucion de celulares
     border-radius: 10vw;
     }
 #AA{
-    font-size: 2vw
-    margin:3vh 3v;
+    font-size: 2vw;
+    margin:3vh 3vw;
     padding: 15px;
 }
 
@@ -331,8 +331,8 @@ responde a resolucion de celulares
        
     }
 #AP{
-    font-size: 2vw
-    margin:3vh 3v;
+    font-size: 2vw;
+    margin:3vh 3vw;
     padding: 15px;
 }
 

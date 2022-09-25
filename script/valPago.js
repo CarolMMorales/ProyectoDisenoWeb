@@ -1,29 +1,23 @@
-'use strick';
-//datos cliente
-const form = document.getElementById('formSub');
-const names = document.getElementById('name');
-const descrip = document.getElementById('descrip');
-const image = document.getElementById('imagen');
-//datos pago
-const subastador = document.getElementById('inputName');
+'use strict';
+const form = document.getElementById('formPago');
+const comprador = document.getElementById('inputName');
 const email = document.getElementById('inputMail');
 const tarjeta = document.getElementById('cardOp');
 const numTarjeta = document.getElementById('nCard');
 const numSeguridad = document.getElementById('security');
 const policy = document.getElementById('checkPolitica');
-
+const tDocument = document.getElementById('documentId');
+const nDocument = document.getElementById('identity');
 const objectValid={
-    nPintura: false,
-    descripcion: false,
-    imagen: false,
-    nSubastador: false,
+    nComprador: false,
     correo: false,
+    tipDocument: false,
+    numDocument: false,
     tTarjeta: false,
     nTarjeta: false,
     nSeguridad: false,
     politica:false
 };
-
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     if(validForm()===-1){
@@ -38,30 +32,31 @@ const validForm=() =>{
     let response = values.findIndex(e => e === false);
     return response;
 }
-names.addEventListener('change',(e)=>{
+comprador.addEventListener('change',(e)=>{
     console.log(e.target.value);
-    const namesRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
-    objectValid.nPintura = e.target.value.match(namesRegex) ? true : false;
-    console.log(Object.values(objectValid));
-});
-descrip.addEventListener('change',(e)=>{
-    console.log(e.target.value);
-    const descripRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{10,100})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,100})$/g;
-    objectValid.descripcion = e.target.value.match(descripRegex) ? true : false;
-    console.log(Object.values(objectValid));
-});
-
-
-subastador.addEventListener('change',(e)=>{
-    console.log(e.target.value);
-    const subastadorRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
-    objectValid.nSubastador = e.target.value.match(subastadorRegex) ? true : false;
+    const compradorRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
+    objectValid.nComprador = e.target.value.match(compradorRegex) ? true : false;
     console.log(Object.values(objectValid));
 });
 email.addEventListener('change',function(e){
     console.log(e.target.value);
     const emailRegex = /^([-\w.%+]{1,64}@(?:[a-zA-Z0-9-]{1,63}\.){1,125}[a-zA-Z]{2,63})$/i;
     objectValid.correo = e.target.value.match(emailRegex) ? true : false;
+    console.log(Object.values(objectValid));
+});
+tDocument.addEventListener('change', (e)=>{
+    let select = document.getElementById('documentId');
+    if (select.value) {
+        objectValid.tipDocument = true;
+    } else {
+        objectValid.tipDocument = false;
+    }
+    console.log(Object.values(objectValid));
+});
+nDocument.addEventListener('change',(e)=>{
+    console.log(e.target.value);
+    const nDocumetRegex = /^([1-9]{7,10})$/g;
+    objectValid.numDocument = e.target.value.match(nDocumetRegex) ? true : false;
     console.log(Object.values(objectValid));
 });
 tarjeta.addEventListener('change', (e)=>{

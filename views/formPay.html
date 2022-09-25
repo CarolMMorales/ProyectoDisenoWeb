@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Arts</title>
   <link rel="shortcut icon" type="image/ico" href="../assets/logo-ARTS.ico">
-  <link rel="stylesheet" href="../css/stylePay.css">
+  <link rel="stylesheet" href="../css/formularios.css">
 </head>
 
 <body>
@@ -34,18 +34,19 @@
   <hr><br><br>
   <main>
     <br><br><br><br>
-    <section class="pay">
+    <section class="formularios">
       <h2>Información de Pago</h2>
-      <form id="form">
+      <br><br>
+      <form id="formPago">
         <h3>Informacion Personal:</h3>
         <div class="personData">
           <label for="inputNames">Nombre y Apellidos:</label>
-          <input type="text" class="formPay" id="inputNames" placeholder="Nombre y Apellidos"><br>
+          <input type="text" class="form" id="inputNames" placeholder="Nombre y Apellidos" required><br>
           <label for="inputMail">correo electronico:</label>
-          <input type="email" class="formPay" id="inputMail" placeholder="email">
+          <input type="email" class="form" id="inputMail" placeholder="email" required>
           <div class="selectDoc">
             <label for="documentId">Documento de identidad</label>
-            <select id="documentId" class="formPay">
+            <select id="documentId" class="form" required>
               <option selected>Selecciona</option>
               <option>cedula de ciudadania</option>
               <option>tarjeta de identidad</option>
@@ -53,12 +54,12 @@
             </select>
           </div>
           <label for="identity">N° de identidad</label>
-          <input type="number" class="formPay" id="identity">
+          <input type="number" class="form" id="identity" required>
         </div>
         <div class="cardData">
           <h3>informacion de la tarjeta</h3>
           <label for="cardOp">Banco:</label>
-          <select id="cardOp" class="formPay">
+          <select id="cardOp" class="form" required>
             <option selected>Selecciona</option>
             <option>master card</option>
             <option>VISA</option>
@@ -66,24 +67,24 @@
             <option>ITAU</option>
           </select><br>
           <label for="nCard">N° de tarjeta</label>
-          <input type="number" class="formPay" id="nCard"><br>
+          <input type="number" class="form" id="nCard" required><br>
           <label for="security">N° de seguridad</label>
-          <input type="number" class="formPay" id="security">
+          <input type="number" class="form" id="security" required>
           <div class="date">
             <h4>fecha de vencimiento:</h4>
             <label for="nMes">mes</label>
-            <input type="number" class="formPay" id="nMes" min="01" max="12">
+            <input type="number" class="form" id="nMes" min="01" max="12" required>
             <label for="nAño">año</label>
-            <input type="number" class="formPay" id="nAño" min="00" max="50">
+            <input type="number" class="form" id="nAño" min="00" max="50" required>
           </div>
         </div>
         <div class="checkPol">
-          <input class="formPay" type="checkbox" id="checkPolitica">
+          <input class="formPay" type="checkbox" id="checkPolitica" required>
           <label class="formPay" for="gridCheck">
             Acepto política de datos
           </label>
         </div>
-        <button type="submit" id="envDato" class="buttonPay">Enviar Datos</button>
+        <button type="submit" id="envDato" class="button">Enviar Datos</button>
       </form>
     </section>
   </main>
@@ -107,7 +108,7 @@
       </div>
     </div>
   </footer>
-
+<script src="../script/valPago.js"></script>
 </body>
 
 </html>
