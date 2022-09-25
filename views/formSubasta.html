@@ -31,17 +31,61 @@
   </header>
   <br><br>
   <main>
-    <form id="subasta">
-      <fieldset>
-        <legend>Datos para la subasta</legend>
-        <label for="name">Nombre del autor:</label>
-        <input type="text" id="name" placeholder="introduce tu nombre" minlength="3" maxlength="200"
-          title="introduce al menos 4 caracteres maximo 50 caracteres" tabindex="0" autofocus="true" autocomplete="off"
-          required>
-        <label for="descrip">Descripción de la pintura</label>
-        <input type="text" id="descrip" placeholder="Descripción de la pintura" </fieldset>
-    </form>
+    <section class="subasta">
+      <h2>Subasta</h2>
+      <form id="subasta">
+        <h3>Información de la pintura</h3>
+        <div class="infoPintura">
+          <label for="name">Nombre del autor:</label><br>
+          <input type="text" id="name" placeholder="introduce tu nombre" minlength="3" maxlength="30" autocomplete="off"
+            required> <br><br>
+          <label for="descrip">Descripción de la pintura</label><br>
+          <input type="text" id="descrip" class="formSub" placeholder="Descripción de la pintura" minlength="10"
+            maxlength="200" required>
+        </div> <br><br>
+        <div class="selecPint">
+          <label for="imagen">Pintura a subastar</label><br>
+          <input type="file" name="imagen" id="imagen">
+          <input type="submit" name="subir-imagen" value="Enviar imagen" />
+        </div> <br><br>
+        <div class="cardData">
+          <h3>Información para el pago</h3>
+          <label for="inputNames">Nombre completo:</label><br>
+          <input type="text" class="formPay" id="inputNames" placeholder="Nombre y Apellidos"><br>
+          <label for="inputMail">correo electronico:</label><br>
+          <input type="email" class="formPay" id="inputMail" placeholder="email"><br>
+
+          <label for="cardOp">Banco:</label>
+          <select id="cardOp" class="formPay">
+            <option selected>Selecciona</option>
+            <option>master card</option>
+            <option>VISA</option>
+            <option>BBVA</option>
+            <option>ITAU</option>
+          </select><br>
+          <label for="nCard">N° de tarjeta</label>
+          <input type="number" class="formPay" id="nCard"><br>
+          <label for="security">N° de seguridad</label>
+          <input type="number" class="formPay" id="security">
+          <div class="date">
+            <h4>fecha de vencimiento:</h4>
+            <label for="nMes">mes</label>
+            <input type="number" class="formPay" id="nMes" min="01" max="12">
+            <label for="nAño">año</label>
+            <input type="number" class="formPay" id="nAño" min="00" max="50">
+          </div>
+        </div>
+        <div class="checkPol">
+          <input class="formPay" type="checkbox" id="checkPolitica">
+          <label class="formPay" for="gridCheck">
+            Acepto política de datos
+          </label>
+        </div>
+        <button type="submit" id="envDato" class="buttonPay">Enviar Datos</button>
+      </form>
+    </section>
   </main>
+  <br><br><br><br>
   <footer class="footer">
     <div class="contFooter">
       <div class="redes">
