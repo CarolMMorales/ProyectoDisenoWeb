@@ -25,22 +25,21 @@ p{
 .ini{
     text-align: right;
     padding-right: 5px;
-    margin-top: 1vh;
-    margin-right: 1vw;
+    margin: 3vh 3vw;
   }
-  .entrada{
-      display: inline-block;
-      padding: 5px;
-      background-color: rgb(179, 139, 206);
-      color: black;
-      text-transform:uppercase;
-      font-family:'Courier New', Courier, monospace;
-      border-radius: 30px;
-      cursor:pointer;
-      text-overflow: clip;
-      text-decoration: none;
-      border: solid 1px white;
-  }
+.entrada{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(179, 139, 206);
+    color: black;
+    text-transform:uppercase;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 30px;
+    cursor:pointer;
+    text-overflow: clip;
+    text-decoration: none;
+    border: solid 1px white;
+}
 
 .header{
   width: 100%;
@@ -101,7 +100,9 @@ p{
     text-align: center;
     font-size: 2vh;
     font-weight: 4vh;
-    font-family:'Courier New', Courier, monospace    
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+  
 }
 ul > li{
     margin-left: 0.2vh;
@@ -111,11 +112,12 @@ ul > li{
     padding: 0.5vw 2vw;
     background-color: rgb(179, 139, 206);
     border-radius: 15px;
-    
+    text-decoration: none;
 }
 li > a{
     
     color:aliceblue;
+    text-decoration: none;
 }
 .footer{
   width: 100%;
@@ -183,6 +185,8 @@ ol> li{
     
 }
 .pic { 
+    border-radius: 1.5vw;
+    border:3px solid #dbcefdff;
     width: 15vw; 
     height: 15vw;
 }   

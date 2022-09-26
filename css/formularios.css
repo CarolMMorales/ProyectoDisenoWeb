@@ -71,7 +71,9 @@ h2{
     text-align: center;
     font-size: 2vh;
     font-weight: 4vh;
-    font-family:'Courier New', Courier, monospace;   
+    font-family:'Courier New', Courier, monospace; 
+    text-decoration: none;
+  
 }
 ul > li{
     margin-left: 0.2vh;
@@ -81,10 +83,11 @@ ul > li{
     padding: 0.5vw 2vw;
     background-color: rgb(179, 139, 206);
     border-radius: 15px;
+    text-decoration: none;
     
 }
 li > a{
-    
+    text-decoration: none;
     color:aliceblue;
 }
 .footer{
