@@ -382,6 +382,7 @@ responde a resolucion de celulares
 .slider li{
     width: 100%;
     list-style: none;
+  background: transparent;
 }
 
 .slider img {
