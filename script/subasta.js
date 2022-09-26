@@ -4,6 +4,7 @@ const form = document.getElementById('formSub');
 const names = document.getElementById('name');
 const descrip = document.getElementById('descrip');
 const image = document.getElementById('imagen');
+const categ=document.getElementById('categoria');
 //datos pago
 const subastador = document.getElementById('inputName');
 const email = document.getElementById('inputMail');
@@ -16,6 +17,7 @@ const objectValid={
     nPintura: false,
     descripcion: false,
     imagen: false,
+    categoria:false,
     nSubastador: false,
     correo: false,
     tTarjeta: false,
@@ -50,7 +52,15 @@ descrip.addEventListener('change',(e)=>{
     objectValid.descripcion = e.target.value.match(descripRegex) ? true : false;
     console.log(Object.values(objectValid));
 });
-
+categ.addEventListener('change', (e)=>{
+    let select = document.getElementById('categoria');
+    if (select.value) {
+        objectValid.categoria = true;
+    } else {
+        objectValid.categoria = false;
+    }
+    console.log(Object.values(objectValid));
+});
 
 subastador.addEventListener('change',(e)=>{
     console.log(e.target.value);

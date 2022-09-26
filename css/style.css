@@ -11,6 +11,33 @@ h2{
   text-align:center;
   font-size: 40px;
 }
+h3{
+    text-align: left;
+    margin: 2vh 2vw;
+    color: #2e095c;
+}
+p{
+    margin: 1vh 3vw;
+}
+.ini{
+    text-align: right;
+    padding-right: 5px;
+    margin-top: 1vh;
+    margin-right: 1vw;
+  }
+  .entrada{
+      display: inline-block;
+      padding: 5px;
+      background-color: rgb(179, 139, 206);
+      color: black;
+      text-transform:uppercase;
+      font-family:'Courier New', Courier, monospace;
+      border-radius: 30px;
+      cursor:pointer;
+      text-overflow: clip;
+      text-decoration: none;
+      border: solid 1px white;
+  }
 
 .header{
   width: 100%;
