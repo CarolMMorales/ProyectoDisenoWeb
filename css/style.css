@@ -13,11 +13,14 @@ h2{
 }
 h3{
     text-align: left;
-    margin: 2vh 2vw;
+    margin: 2vh 8vw;
     color: #2e095c;
+    font-size: 30px;
 }
 p{
-    margin: 1vh 3vw;
+    margin: 1vh 10vw;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 .ini{
     text-align: right;
