@@ -10,21 +10,20 @@ body{
 .ini{
   text-align: right;
   padding-right: 5px;
-  margin-top: 1vh;
-  margin-right: 1vw;
+  margin: 3vh 3vw;
 }
 .entrada{
-    display: inline-block;
-    padding: 5px;
-    background-color: rgb(179, 139, 206);
-    color: black;
-    text-transform:uppercase;
-    font-family:'Courier New', Courier, monospace;
-    border-radius: 30px;
-    cursor:pointer;
-    text-overflow: clip;
-    text-decoration: none;
-    border: solid 1px white;
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(179, 139, 206);
+  color: black;
+  text-transform:uppercase;
+  font-family:'Courier New', Courier, monospace;
+  border-radius: 30px;
+  cursor:pointer;
+  text-overflow: clip;
+  text-decoration: none;
+  border: solid 1px white;
 }
 .header{
   width: 100%;

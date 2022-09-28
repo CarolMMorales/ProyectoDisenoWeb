@@ -39,16 +39,16 @@
           <form id="formReg" action="../php/registro.php" method="POST">
             <div>
               <label for="txtUsuario">Usuario:</label><br>
-              <input type="text" class="form" name="txtUsuario" placeholder="Ingresa usuario" required><br>
+              <input type="text" class="form" name="txtUsuario" id="txtUsuario" placeholder="Ingresa usuario" required><br>
 
               <label for="txtClave">Contraseña:</label><br>
               <input type="password" class="form" name="txtClave" id="txtClave" placeholder="Ingresa contraseña" required><br>
 
-              <label for="txtClave">Confirme contraseña:</label><br>
+              <label class="text" for="txtClave">Confirme contraseña:</label><br>
               <input type="password" class="form" name="txtClaveDos" id="txtClaveDos" placeholder="Confirma contraseña" required><br>
 
               <label for="txtCorreo">Correo electronico:</label><br>
-              <input type="email" class="form" name="txtCorreo" placeholder="Ingresa correo" required><br>
+              <input type="email" class="form" name="txtCorreo" id="txtCorreo" placeholder="Ingresa correo" required><br>
 
             <br><br>
             <div>
@@ -58,7 +58,7 @@
               </label>
             </div>
             <br><br>
-            <input class="form-btn" name="submit" type="submit" value="Suscribirse" />
+            <input class="button" name="submit" type="submit" value="Suscribirse" />
           </form>
         </section>
       </main>

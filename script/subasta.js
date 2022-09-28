@@ -3,7 +3,7 @@
 const form = document.getElementById('formSub');
 const names = document.getElementById('name');
 const descrip = document.getElementById('descrip');
-const image = document.getElementById('imagen');
+var image = document.getElementById('imagen');
 const categ=document.getElementById('categoria');
 //datos pago
 const subastador = document.getElementById('inputName');
@@ -48,7 +48,7 @@ names.addEventListener('change',(e)=>{
 });
 descrip.addEventListener('change',(e)=>{
     console.log(e.target.value);
-    const descripRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{10,100})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,100})$/g;
+    const descripRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,100})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,100})$/g;
     objectValid.descripcion = e.target.value.match(descripRegex) ? true : false;
     console.log(Object.values(objectValid));
 });
@@ -60,6 +60,21 @@ categ.addEventListener('change', (e)=>{
         objectValid.categoria = false;
     }
     console.log(Object.values(objectValid));
+});
+image.addEventListener('change', function () {
+        
+    var filePath = this.value;
+    var allowedExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+    if(!allowedExtensions.exec(filePath)){
+        alert('Extensión no permitida. Utiliza: .jpeg/.jpg/.png/.gif.');
+        objectValid.value = false;
+        
+    }else{
+        alert('Extensión correcta.');
+        objectValid.imagen = true;
+        
+    }
+
 });
 
 subastador.addEventListener('change',(e)=>{

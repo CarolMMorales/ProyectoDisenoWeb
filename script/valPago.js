@@ -1,6 +1,6 @@
 'use strict';
 const form = document.getElementById('formPago');
-const comprador = document.getElementById('inputName');
+const comprador = document.getElementById('inputNames');
 const email = document.getElementById('inputMail');
 const tarjeta = document.getElementById('cardOp');
 const numTarjeta = document.getElementById('nCard');
@@ -32,7 +32,7 @@ const validForm=() =>{
     let response = values.findIndex(e => e === false);
     return response;
 }
-comprador.addEventListener('change',(e)=>{
+comprador.addEventListener('change',function(e){
     console.log(e.target.value);
     const compradorRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,25})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,25})$/g;
     objectValid.nComprador = e.target.value.match(compradorRegex) ? true : false;
@@ -55,7 +55,7 @@ tDocument.addEventListener('change', (e)=>{
 });
 nDocument.addEventListener('change',(e)=>{
     console.log(e.target.value);
-    const nDocumetRegex = /^([1-9]{7,10})$/g;
+    const nDocumetRegex = /^([1-9]{6,10})$/g;
     objectValid.numDocument = e.target.value.match(nDocumetRegex) ? true : false;
     console.log(Object.values(objectValid));
 });

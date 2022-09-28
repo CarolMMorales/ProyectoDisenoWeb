@@ -124,10 +124,10 @@ ol> li{
 }
 .formularios{
   background:#decefd;
-  width:50%;
+  width:40%;
   height:100%;
-  padding: 3vw 4vw;
-  margin:2vw 25vw;
+  padding: 3vw 7vw;
+  margin:2vw 30vw;
   margin-top:4vw;
   display:flex;
   flex-flow:column nowrap ;
@@ -135,7 +135,8 @@ ol> li{
   color: #6b002e;
   border:5px solid #6b002e;
   font-family:'Courier New', Courier, monospace;
-  
+  text-align: left;
+  font-size: 20px;
 }
 .form{
   margin:1vw 0vw;
@@ -144,10 +145,12 @@ ol> li{
 .button{
   color: black;
   background-color: #b4a2c9;
-  text-decoration:underline rgb(90, 88, 223);
-  border-radius:2%;
-  margin: 3% 40%;
-  padding: 2% 2%;
+  text-decoration:none;
+  display: flex;
+  border-radius:5%;
+  margin: 4% 35%;
+  padding: 3% 3%;
+  font-size: 15px;
 }
 /*
 responde a resolucion de tablets
