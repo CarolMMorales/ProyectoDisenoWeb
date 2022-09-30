@@ -48,7 +48,7 @@ names.addEventListener('change',(e)=>{
 });
 descrip.addEventListener('change',(e)=>{
     console.log(e.target.value);
-    const descripRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{3,100})([\s]?)([a-zA-ZÀ-ÖØ-öø-ÿ]{0,100})$/g;
+    const descripRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{2,20})([\s]?){2,100}$/g;
     objectValid.descripcion = e.target.value.match(descripRegex) ? true : false;
     console.log(Object.values(objectValid));
 });
