@@ -2,7 +2,6 @@
 //datos cliente
 const form = document.getElementById('formSub');
 const names = document.getElementById('name');
-const descrip = document.getElementById('descrip');
 var image = document.getElementById('imagen');
 const categ=document.getElementById('categoria');
 //datos pago
@@ -15,7 +14,6 @@ const policy = document.getElementById('checkPolitica');
 
 const objectValid={
     nPintura: false,
-    descripcion: false,
     imagen: false,
     categoria:false,
     nSubastador: false,
@@ -46,12 +44,7 @@ names.addEventListener('change',(e)=>{
     objectValid.nPintura = e.target.value.match(namesRegex) ? true : false;
     console.log(Object.values(objectValid));
 });
-descrip.addEventListener('change',(e)=>{
-    console.log(e.target.value);
-    const descripRegex = /^([a-zA-ZÀ-ÖØ-öø-ÿ]{2,20})([\s]?){2,100}$/g;
-    objectValid.descripcion = e.target.value.match(descripRegex) ? true : false;
-    console.log(Object.values(objectValid));
-});
+
 categ.addEventListener('change', (e)=>{
     let select = document.getElementById('categoria');
     if (select.value) {
