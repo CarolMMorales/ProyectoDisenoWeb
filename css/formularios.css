@@ -42,6 +42,7 @@ h2{
     cursor:pointer;
     text-decoration: underline;
 }
+
 .encabezado >.title{
     position: relative;
     bottom:20vh;
@@ -57,14 +58,27 @@ h2{
     position: left;
     margin-top: 10px;
     margin: 10px 20px 10px;
-    margin-bottom:2vw;
+    margin-bottom:3vw;
     margin-left: 20px;
     width: 10vw;
     height: 10vw;
     border-radius: 100%;
     
 }
-
+.logo{
+  animation: movimiento 2.5s linear infinite;
+}
+@keyframes movimiento{
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(30px);
+  } 
+  100%{
+      transform: translateY(0);
+  } 
+}
 .menu{ 
     width: 100%;
     margin: auto;
@@ -89,6 +103,10 @@ ul > li{
 li > a{
     text-decoration: none;
     color:aliceblue;
+}
+.menu ul li:hover{  
+  padding: 1vh 3vw;
+  font-size: 1.2vw;     
 }
 .footer{
   width: 100%;
